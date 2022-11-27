@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Glassmorphism login form </title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style type="text/css">
+	    *{box-sizing: border-box;}
+		body
+		{
+			height: 100vh;
+			background:  linear-gradient(225deg,#6bca91 0%,#699dd3 53%,#ab4fa7 100%);
+		}
+		.form
+		{
+			width: 450px;
+			height: 450px;
+			margin: 150px auto;
+			border: 2px solid white;
+			padding: 40px;
+			position: relative;
+		}
+		.glass
+		{
+			background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0));
+			background-repeat: no-repeat;
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			border-radius: 10px;
+			border: 1px solid rgba(255,255,255,0.2);
+			box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.4);
+		}
+
+		h2
+		{
+			left: 0px;
+			letter-spacing: 1px;
+			font-weight: 500;
+			font-size: 32px;
+			position: relative;
+			color: #fff;
+            padding-bottom: 10px;
+            border-bottom-style: solid;
+            border-bottom-width: 3.1px;
+            width: fit-content;
+            font-family: 'Poppins';
+		}
+		.form .id input
+		{
+			height:40px;
+			width: 80%;
+			margin-top: 15px;
+			border: 1px solid rgba(255,255,255,0.2);
+			border-radius: 20px;
+			padding: 5px;
+			background: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0));
+			box-shadow:2px rgba(0, 0, 0, 0.4);
+			font-family: 'Poppins';
+        }
+		.id input::placeholder
+		{
+			color: #fff;
+			font-family: 'Poppins';
+			font-size: 20px;
+			padding: 20px;
+		}
+		.id i
+		{
+			color: #fff;
+		}
+		.square1
+		{
+			border: 1px solid rgba(255,255,255,0.2);
+			border-radius: 10px;
+			margin-top:130px ;
+			margin-left:375px;
+			width: 120px;
+			height: 120px;
+			position: absolute;
+			z-index: 2;
+			background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0));
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.4);
+        }
+		.square2
+		{
+			border: 1px solid rgba(255,255,255,0.2);
+			border-radius: 10px;
+			margin-top:-80px ;
+			margin-left:900px;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			z-index: -1;
+			background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0));
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.4);
+		}
+		.square3
+		{
+			border: 1px solid rgba(255,255,255,0.2);
+			border-radius: 10px;
+			margin-top:275px ;
+			margin-left:910px;
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			z-index: 2;
+			background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0));
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.4);
+	    }
+		.square4
+		{
+			border: 1px solid rgba(255,255,255,0.2);
+			border-radius: 10px;
+			margin-top:-40px ;
+			margin-left:650px;
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			z-index: 2;
+			background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0));
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.4);
+		}
+		.square5
+		{
+			border: 1px solid rgba(255,255,255,0.2);
+			border-radius: 10px;
+			margin-top:470px ;
+			margin-left:600px;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			z-index: 2;
+			background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0));
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.4);
+		}
+	 	.circle
+		{
+			border: 1px solid transparent;
+			border-radius: 50%;
+			margin-top:12px;
+			margin-left:830px;
+			width: 340px;
+			height: 340px;
+			position: absolute;
+			z-index: -2;
+			background: linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0));
+			box-shadow:30px  rgba(255, 255, 255,0.8)inset;
+		}
+		.a1
+		{
+			position: absolute;
+			letter-spacing: 2px;
+			font-size: 30px;
+			font-weight: 25;
+			left: 20%;
+			top: 32%;
+			transform: rotate(-10deg);
+			animation: neonAnim 2s alternate-reverse infinite;
+            color:#EBEFF3;
+        }
+           @keyframes neonAnim {
+                from {
+                     text-shadow:
+                     0 0 10px rgba(194, 103, 138, .7)
+          			 0 0 40px rgba(194, 103, 138, .7),
+          			 0 0 100px rgba(194, 103, 138, .7);
+      				 }
+      			to {
+        			text-shadow:
+          			0 0 5px rgba(194, 103, 138, .7),
+          			0 0 20px rgba(194, 103, 138, .7),
+          			0 0 60px rgba(194, 103, 138, .7);
+      				}
+      	}
+
+	
+		.button
+		{
+			height: 35px;
+			cursor: pointer;
+			font-weight: 600;
+			color: #fff;
+			color: #666;
+			width: 25%;
+			margin-top: 20px;
+			margin-left: 30px;
+			border: 1px solid white;
+			border-radius: 20px;
+			font-family: 'Poppins';
+		}
+		.pwd
+		{
+		  color: #fff;
+		  font-size: 20px;
+		  font-family: 'Poppins';
+		}
+		 a
+		{
+			color: #fff;
+			font-weight: 600;
+		}
+</style>
+</head>
+<body>
+
+    <div class="square1"></div>
+    <div class="square2"></div>
+    <div class="square3"></div>
+    <div class="square4"></div>
+    <div class="square5"></div>
+    <div class="circle"></div>
+    <div class="a1">Animated</div>
+	<div class="form glass" >
+    <h2> Login Form </h2>
+	  
+	        <div class="id"><i class="fa fa-user" style="font-size:24px"></i>
+	  		   <input type="text"  placeholder="Username">
+	        </div>
+
+	        <div class="id"><i class="fa fa-key" style="font-size:24px"></i>
+	  		   <input type="Password"  placeholder="Password">
+	        </div>
+            <button class="button"> Login </button>
+
+	  <p class="pwd">Forgot Password ? <a href="Click Here">Click Here </a></p>
+
+	  <p class="pwd">Don't have an account ? <a href="Sign up">Sign up</a></p>
+      </div>
+</body>
+</html>
