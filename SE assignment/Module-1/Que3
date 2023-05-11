@@ -1,0 +1,51 @@
+What is SDLC? Explain each phase of SDLC.
+
+ANS:-
+SDLC or the Software Development Life Cycle is a process that produces software with the highest quality and lowest cost in the shortest time possible. SDLC provides a well-structured flow of phases that help an organization to quickly produce high-quality software which is well-tested and ready for production use.
+
+	Planning Stage = Before we even begin with the planning stage, the best tip we can give you is to take time and acquire proper understanding of app development life cycle. The planning stage (also called the feasibility stage) is exactly what it sounds like, the phase in which developers will plan for the upcoming project
+
+	Analysis Stage = The analysis stage includes gathering all the specific details required for a new system as well as determining the first ideas for prototypes.
+    
+Developers may:
+1.) Define any prototype system requirements
+2.) Evaluate alternatives to existing prototypes
+3.) Perform research and analysis to determine the needs of end-users.
+
+	Design Stage = The design stage is a necessary precursor to the main developer stage. Developers will first outline the details for the overall application, alongside specific aspects, such as its:
+
+1.)	 User interfaces
+2.)	System interfaces
+3.)	Network and network requirements
+4.)	Databases
+
+
+Development Stage = The development stage is the part where developers actually write code and build the application according to the earlier design documents and outlined specifications.
+
+Testing Stage = Building software is not the end. Now it must be tested to make sure that there aren’t any bugs and that the end-user experience will not negatively be affected at any point.
+During the testing stage, developers will go over their software with a fine-tooth comb, noting any bugs or defects that need to be tracked, fixed, and later retested.
+
+
+Implementation and Integration Stage = After testing, the overall design for the software will come together. Different modules or designs will be integrated into the primary source code through developer efforts, usually by leveraging training environments to detect further errors or defects.
+The information system will be integrated into its environment and eventually installed. After passing this stage, the software is theoretically ready for market and may be provided to any end-users.
+
+Maintenance Stage = The SDLC doesn’t end when software reaches the market. Developers must now move into a maintenance mode and begin practicing any activities required to handle issues reported by end-users.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
